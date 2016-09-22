@@ -1,12 +1,24 @@
 base <http://bibliotek.se/>
 prefix bf: <http://id.loc.gov/ontologies/bibframe/> 
+prefix lcrel: <http://id.loc.gov/vocabulary/relatores/> 
+prefix lcrel: <http://id.loc.gov/vocabulary/language/> 
+prefix kbmarc:<http://id.kb.se/marc/>
 
 </bok/alice-i-underlandet> a bf:Text ;
-	bf:title "Alice i underlandet"@sv ;
-	bf:mainTitle "Alice i underlandet" ;
+	bf:title [ a bf:WorkTitle ; 
+                 bf:mainTitle "Alice i underlandet"
+		] ;
+	bf:contribution [ a bf:Contribution, kbmarc:MainEntry ;
+		bf:agent </person/lewis-carroll> ;
+		bf:role lcrel:aut ;
+	] ;
 	bf:contribution [ a bf:Contribution, kbmarc:MainEntry ;
 		bf:agent </person/åke-runnquist> ;
-		bf:role lcrel:trl, lcrel:ill ;
+		bf:role lcrel:trl ;
+	] ;
+	bf:contribution [ a bf:Contribution, kbmarc:MainEntry ;
+		bf:agent </person/tove-jansson> ;
+		bf:role lcrel:ill ;
 	] ;
 	bf:language lclang:swe ;
 	bf:translationOf </work/alice-adventures-in-wonderland> .
@@ -31,5 +43,5 @@ prefix bf: <http://id.loc.gov/ontologies/bibframe/>
 #250	 	a [Ny utg.]
 #260	 	a Stockholm :b Bonniers juniorförl.,c 1983e (Östtyskland)
 #300	 	a 111, [1] s. :b ill. ;c 24 cm
-#700	1 	a Jansson, Tove,d 1914-20014 ill0 191503
-#700	1 	a Runnquist, Åke,d 1919-19914 trl0 231599
+##700	1 	a Jansson, Tove,d 1914-20014 ill0 191503
+##700	1 	a Runnquist, Åke,d 1919-19914 trl0 231599
