@@ -1,8 +1,35 @@
 base <http://bibliotek.se/>
 prefix bf: <http://id.loc.gov/ontologies/bibframe/> 
 
-</bok/alice-i-underlandet> a bf:Work ;
+</bok/alice-i-underlandet> a bf:Text ;
 	bf:title "Alice i underlandet"@sv ;
-	bf:translatorOf </bok/Alice-in-Wonderland> ;
-		bf:agent </person/Åker-runnqvist> ;
-	bf:role relator:trl .
+	bf:mainTitle "Alice i underlandet" ;
+	bf:contribution [ a bf:Contribution, kbmarc:MainEntry ;
+		bf:agent </person/åke-runnquist> ;
+		bf:role lcrel:trl, lcrel:ill ;
+	] ;
+	bf:language lclang:swe ;
+	bf:translationOf </work/alice-adventures-in-wonderland> .
+
+
+
+#http://libris.kb.se/bib/7285433?vw=full&tab3=marc
+#000		04712cam a2201069 a 4500
+#001		7285433
+#003		SE-LIBR
+#005		20160421125521.0
+#008		011211s1983 sw a j 000 1 swe
+#020	 	a 91-48-50776-8 (inb.) ;c 80:00
+#035	 	9 9148507768
+#040	 	a NB
+#041	1 	a sweh eng
+#042	 	9 NB
+#084	 	a uHe=c2 kssb/5
+#100	1 	a Carroll, Lewis,d 1832-18980 44914
+#240	1 0	a Alice's adventures in Wonderland.l Svenskas (Runnquist)
+#245	0 0	a Alice i Underlandet /c Lewis Carroll ; i övers. av Åke Runnquist ; med ill. av Tove Jansson
+#250	 	a [Ny utg.]
+#260	 	a Stockholm :b Bonniers juniorförl.,c 1983e (Östtyskland)
+#300	 	a 111, [1] s. :b ill. ;c 24 cm
+#700	1 	a Jansson, Tove,d 1914-20014 ill0 191503
+#700	1 	a Runnquist, Åke,d 1919-19914 trl0 231599
