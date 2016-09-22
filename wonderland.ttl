@@ -1,5 +1,8 @@
 base <http://bibliotek.se/>
 prefix bf: <http://id.loc.gov/ontologies/bibframe/> 
 
-</bok/alice-i-underlandet> a bf:Work ; 
-	bf:name "Alice i underlandet"@sv .
+</bok/alice-i-underlandet> a bf:Work ;
+	bf:title "Alice i underlandet"@sv ;
+	bf:translatorOf </bok/Alice-in-Wonderland> ;
+		bf:agent </person/Åker-runnqvist> ;
+	bf:role relator:trl .
