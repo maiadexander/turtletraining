@@ -1,1 +1,24 @@
+base <http://bibliotek.se/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix bf: <http://id.loc.gov/ontologies/bibframe/>
+prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/>
+prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/>
+prefix lcrel: <http://id.loc.gov/vocabulary/relators/>
+prefix lclang: <http://id.loc.gov/vocabulary/languages/>
+prefix kbmarc: <http:id.kb.se/marc/>
+prefix kbx: <http:id.kb.se/vocab/x/>
+prefix id: <http:id.kb.se/>
 
+#Work - german orig
+
+</work/die-unendliche-geschichte-1979> a bf:Text  ; 
+#hur gör man med tysk bestämd form, 'die'?
+ bf:title [a bf:WorkTitle ;
+            bf:mainTitle "Die Unendliche Geschichte"
+         ] ;
+ bf:contribution [ a bf:Contribution ;
+            bf:agent </person/michael-ende> ;
+            bf:role lcrel:aut 
+         ] ;
+  bf:language lclang:ger ;
+  bf:originDate "1979"^^xsd:gYear .
