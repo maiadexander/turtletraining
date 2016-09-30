@@ -3,6 +3,27 @@ prefix bf: <http://id.loc.gov/ontologies/bibframe/>
 prefix lcrel: <http://id.loc.gov/vocabulary/relatores/> 
 prefix lclang: <http://id.loc.gov/vocabulary/language/> 
 prefix kbmarc:<http://id.kb.se/marc/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+#Work - engelskt original
+
+</work/alices-adventures-in-wonderland-1864> a bf:Text  ; 
+
+ bf:title [a bf:WorkTitle ;
+            bf:mainTitle "Alice's adventures in wonderland"
+         ] ;
+ bf:contribution [ a bf:Contribution ;
+            bf:agent </person/lewis-carroll> ;
+            bf:role lcrel:aut 
+         ] ;
+  bf:language lclang:eng ;
+  bf:originDate "1864"^^xsd:gYear .
+
+
+
+
+
+
 
 </bok/alice-i-underlandet> a bf:Text ;
 	bf:title [ a bf:WorkTitle ; 
