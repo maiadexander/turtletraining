@@ -1,13 +1,13 @@
 base <http://bibliotek.se/>
-prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix id: <http:id.kb.se/>
 prefix bf: <http://id.loc.gov/ontologies/bibframe/>
-prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/>
-prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/>
+
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix lcrel: <http://id.loc.gov/vocabulary/relators/>
 prefix lclang: <http://id.loc.gov/vocabulary/languages/>
 prefix kbmarc: <http:id.kb.se/marc/>
 prefix kbx: <http:id.kb.se/vocab/x/>
-prefix id: <http:id.kb.se/>
+
 
 #Work - german orig
 
