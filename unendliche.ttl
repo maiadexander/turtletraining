@@ -11,6 +11,7 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 
 #Work - german orig
+#http://libris.kb.se/bib/5229817
 
 </work/die-unendliche-geschichte-1979> a bf:Text  ; 
 #hur gör man med tysk bestämd form, 'die'?
@@ -27,6 +28,7 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 
 #Work - svensk övers
+#http://libris.kb.se/bib/8357213
 
 </work/den-oändliga-historien-adlerberth> a bf:Text ;
 #hur gör man med svenskans bestämda form, 'den'?
@@ -42,4 +44,7 @@ prefix kbx: <http:id.kb.se/vocab/x/>
   
   bf:translationOf </work/die-unendliche-geschichte-1979> .
 
-#http://libris.kb.se/bib/8357213
+
+
+#Work - illustrationer
+#http://libris.kb.se/bib/5229817
