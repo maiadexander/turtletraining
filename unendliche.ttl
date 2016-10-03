@@ -9,6 +9,7 @@ prefix kbmarc: <http:id.kb.se/marc/>
 prefix kbx: <http:id.kb.se/vocab/x/>
 
 
+
 #Work - german orig
 
 </work/die-unendliche-geschichte-1979> a bf:Text  ; 
@@ -22,3 +23,23 @@ prefix kbx: <http:id.kb.se/vocab/x/>
          ] ;
   bf:language lclang:ger ;
   bf:originDate "1979"^^xsd:gYear .
+
+
+
+#Work - svensk övers
+
+</work/den-oändliga-historien-adlerberth> a bf:Text ;
+#hur gör man med svenskans bestämda form, 'den'?
+	bf:title [a bf:WorkTitle ;
+            bf:mainTitle "Den oändliga historien"
+         ] ;
+  bf:contribution [ a bf:Contribution ;
+            bf:agent </person/roland-adlerberth> ;
+            bf:role lcrel:trl 
+         ] ;
+  bf:language lclang:swe ;
+  bf:originDate "1998"^^xsd:gYear ; 
+  
+  bf:translationOf </work/die-unendliche-geschichte-1979> .
+
+#http://libris.kb.se/bib/8357213
