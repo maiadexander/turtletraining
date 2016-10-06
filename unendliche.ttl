@@ -12,9 +12,9 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 #Work - german orig
 #http://libris.kb.se/bib/5229817
+#hur gör man med tysk bestämd form, 'die'?
 
 </work/die-unendliche-geschichte-1979> a bf:Text  ; 
-#hur gör man med tysk bestämd form, 'die'?
  bf:title [a bf:WorkTitle ;
             bf:mainTitle "Die Unendliche Geschichte"
          ] ;
@@ -29,9 +29,9 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 #Work - svensk övers
 #http://libris.kb.se/bib/8357213
+#hur gör man med svenskans bestämda form, 'den'?
 
 </work/den-oändliga-historien-adlerberth> a bf:Text ;
-#hur gör man med svenskans bestämda form, 'den'?
 	bf:title [a bf:WorkTitle ;
             bf:mainTitle "Den oändliga historien"
          ] ;
@@ -40,7 +40,7 @@ prefix kbx: <http:id.kb.se/vocab/x/>
             bf:role lcrel:trl 
          ] ;
   bf:language lclang:swe ;
-  bf:originDate "1979"^^xsd:gYear ; 
+  bf:originDate "1989"^^xsd:gYear ; 
   
   bf:translationOf </work/die-unendliche-geschichte-1979> .
 
