@@ -59,3 +59,6 @@ prefix kbx: <http:id.kb.se/vocab/x/>
             bf:role lcrel:ill 
          ] ;
   bf:originDate "1979"^^xsd:gYear .
+
++bf:illustrativeContent [ 
++                    rdfs:label "ill." ] ;
