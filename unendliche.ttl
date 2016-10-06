@@ -40,7 +40,7 @@ prefix kbx: <http:id.kb.se/vocab/x/>
             bf:role lcrel:trl 
          ] ;
   bf:language lclang:swe ;
-  bf:originDate "1998"^^xsd:gYear ; 
+  bf:originDate "1979"^^xsd:gYear ; 
   
   bf:translationOf </work/die-unendliche-geschichte-1979> .
 
@@ -48,3 +48,14 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 #Work - illustrationer
 #http://libris.kb.se/bib/5229817
+#skos:definition "Information about content intended to illustrate a resource." - varför inte?
+
+</work/illustrationer-die-unendliche-geschichte-1979> a bf:illustration ;
+  bf:title [a bf:Title ;
+            bf:title "[Von A biz Z mit Buchstaben und Bildern vershen von Roswita Quadflieg]"
+         ] ;
+  bf:contribution [ a bf:Contribution ;
+            bf:agent </person/roswita-quadflieg> ;
+            bf:role lcrel:ill 
+         ] ;
+  bf:originDate "1979"^^xsd:gYear .
