@@ -88,4 +88,8 @@ prefix kbx: <http:id.kb.se/vocab/x/>
   bf:contribution [ a bf:Contribution ; 
 			bf:agent </person/wolfgang-petersen> ;
 				bf:role lcrel:drt , lcrel:aus 
+			    ] ;
+  bf:contribution [ a bf:Contribution ; 
+			bf:agent </person/herman-weigel> ;
+				bf:role lcrel:aus 
 			    ] .
