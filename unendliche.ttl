@@ -85,11 +85,12 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 	bf:title [a bf:Title ; 
                 bf:maintitle "The Never Ending Story" 
                 ] ;
-  bf:contribution [ a bf:Contribution ; 
+	bf:contribution [ a bf:Contribution ; 
 			bf:agent </person/wolfgang-petersen> ;
 				bf:role lcrel:drt , lcrel:aus 
 			    ] ;
-  bf:contribution [ a bf:Contribution ; 
+	bf:contribution [ a bf:Contribution ; 
 			bf:agent </person/herman-weigel> ;
 				bf:role lcrel:aus 
-			    ] .
+			    ] ;
+	bf:derivativeOf </work/die-unendliche-geschichte-1979> ;
