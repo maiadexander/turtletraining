@@ -24,6 +24,7 @@ prefix kbx: <http:id.kb.se/vocab/x/>
   bf:language lclang:ger ;
   bf:originDate "1979"^^xsd:gYear .
 
+# + Michael Ende
 
 
 # Work - german orig + illustrationer
