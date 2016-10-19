@@ -12,7 +12,6 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 #Work - german orig
 #http://libris.kb.se/bib/5229817
-#hur gör man med tysk bestämd form, 'die'?
 
 </work/die-unendliche-geschichte-1979> a bf:Text  ; 
  bf:title [a bf:WorkTitle ;
@@ -27,9 +26,28 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 
 
-#Work - svensk övers
+#Work - german orig + illustrationer
+#http://libris.kb.se/bib/5229817
+
+</work/die-unendliche-geschichte-1979> a bf:Text  ; 
+ bf:title [a bf:WorkTitle ;
+            bf:mainTitle "Die Unendliche Geschichte"
+         ] ;
+ bf:contribution [ a bf:Contribution ;
+            bf:agent </person/michael-ende> ;
+            bf:role lcrel:aut 
+         ] ;
+ bf:contribution [ a bf:Contribution ;
+            bf:agent </person/roswita-quadflieg> ;
+            bf:role lcrel:ill 
+         ] ;
+  bf:language lclang:ger ;
+  bf:originDate "1979"^^xsd:gYear .
+
+
+
+#Work - svensk översättning
 #http://libris.kb.se/bib/8357213
-#hur gör man med svenskans bestämda form, 'den'?
 
 </work/den-oändliga-historien-adlerberth> a bf:Text ;
 	bf:title [a bf:WorkTitle ;
@@ -46,12 +64,11 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 
 
-#Work - illustrationer
+#Work - Illustrationer utbrytna från verket
 #http://libris.kb.se/bib/5229817
-#skos:definition "Information about content intended to illustrate a resource." - varför inte?
 
 </work/illustrationer-die-unendliche-geschichte-1979> a bf:illustration ;
-  bf:title [a bf:Title ;
+  bf:title [a bf:tTtle ;
             bf:title "[Von A biz Z mit Buchstaben und Bildern vershen von Roswita Quadflieg]"
          ] ;
   bf:contribution [ a bf:Contribution ;
@@ -60,5 +77,11 @@ prefix kbx: <http:id.kb.se/vocab/x/>
          ] ;
   bf:originDate "1979"^^xsd:gYear .
 
-+bf:illustrativeContent [ 
-+                    rdfs:label "ill." ] ;
+
+#Movie - Never Ending Story, 1984
+#http://www.imdb.com/title/tt0088323/?ref_=ttmi_tt
+
+</work/the-never-ending-story-1984> a bf:MovingImage ;
+	bf:title [a bf:Title ; 
+                bf:maintitle "The Never Ending Story" 
+                ] ;
