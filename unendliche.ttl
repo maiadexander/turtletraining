@@ -84,4 +84,10 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 </work/the-never-ending-story-1984> a bf:MovingImage ;
 	bf:title [a bf:Title ; 
                 bf:maintitle "The Never Ending Story" 
-                ] ;
+                ] .
+
+#regissör
+#foto
+
+#DVD av biofilm
+#35 mm-kopia av biofilm
