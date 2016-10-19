@@ -10,8 +10,8 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 
 
-#Work - german orig
-#http://libris.kb.se/bib/5229817
+# Work - german orig
+# http://libris.kb.se/bib/5229817
 
 </work/die-unendliche-geschichte-1979> a bf:Text  ; 
  bf:title [a bf:WorkTitle ;
@@ -19,15 +19,15 @@ prefix kbx: <http:id.kb.se/vocab/x/>
          ] ;
  bf:contribution [ a bf:Contribution ;
             bf:agent </person/michael-ende> ;
-            bf:role lcrel:aut 
+	            bf:role lcrel:aut 
          ] ;
   bf:language lclang:ger ;
   bf:originDate "1979"^^xsd:gYear .
 
 
 
-#Work - german orig + illustrationer
-#http://libris.kb.se/bib/5229817
+# Work - german orig + illustrationer
+# http://libris.kb.se/bib/5229817
 
 </work/die-unendliche-geschichte-1979> a bf:Text  ; 
  bf:title [a bf:WorkTitle ;
@@ -35,19 +35,19 @@ prefix kbx: <http:id.kb.se/vocab/x/>
          ] ;
  bf:contribution [ a bf:Contribution ;
             bf:agent </person/michael-ende> ;
-            bf:role lcrel:aut 
+    	        bf:role lcrel:aut 
          ] ;
  bf:contribution [ a bf:Contribution ;
             bf:agent </person/roswita-quadflieg> ;
-            bf:role lcrel:ill 
+        	    bf:role lcrel:ill 
          ] ;
   bf:language lclang:ger ;
   bf:originDate "1979"^^xsd:gYear .
 
 
 
-#Work - svensk översättning
-#http://libris.kb.se/bib/8357213
+# Work - svensk översättning
+# http://libris.kb.se/bib/8357213
 
 </work/den-oändliga-historien-adlerberth> a bf:Text ;
 	bf:title [a bf:WorkTitle ;
@@ -55,7 +55,7 @@ prefix kbx: <http:id.kb.se/vocab/x/>
          ] ;
   bf:contribution [ a bf:Contribution ;
             bf:agent </person/roland-adlerberth> ;
-            bf:role lcrel:trl 
+            	bf:role lcrel:trl 
          ] ;
   bf:language lclang:swe ;
   bf:originDate "1989"^^xsd:gYear ; 
@@ -64,8 +64,8 @@ prefix kbx: <http:id.kb.se/vocab/x/>
 
 
 
-#Work - Illustrationer utbrytna från verket
-#http://libris.kb.se/bib/5229817
+# Work - Illustrationer utbrytna från verket
+# http://libris.kb.se/bib/5229817
 
 </work/illustrationer-die-unendliche-geschichte-1979> a bf:illustration ;
   bf:title [a bf:tTtle ;
@@ -73,21 +73,19 @@ prefix kbx: <http:id.kb.se/vocab/x/>
          ] ;
   bf:contribution [ a bf:Contribution ;
             bf:agent </person/roswita-quadflieg> ;
-            bf:role lcrel:ill 
+            	bf:role lcrel:ill 
          ] ;
   bf:originDate "1979"^^xsd:gYear .
 
 
-#Movie - Never Ending Story, 1984
-#http://www.imdb.com/title/tt0088323/?ref_=ttmi_tt
+# Movie - Never Ending Story, 1984
+# http://www.imdb.com/title/tt0088323/?ref_=ttmi_tt
 
 </work/the-never-ending-story-1984> a bf:MovingImage ;
 	bf:title [a bf:Title ; 
                 bf:maintitle "The Never Ending Story" 
-                ] .
-
-#regissör
-#foto
-
-#DVD av biofilm
-#35 mm-kopia av biofilm
+                ] ;
+  bf:contribution [ a bf:Contribution ; 
+			bf:agent </person/wolfgang-petersen> ;
+				bf:role lcrel:drt , lcrel:aus 
+			    ] .
